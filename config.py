@@ -33,6 +33,7 @@ V_JONES_MAX = 1500.0       # Jones model upper limit (m/s)
 UNCERTAINTY_FORRESTAL = None  # To be calculated from training set before training
 UNCERTAINTY_JONES = None      # To be calculated from training set before training
 UNCERTAINTY_INVALID = 999.0   # Penalty value for out-of-range samples
+KAPPA_PHYSICS = 1.0
 
 # ===== Model Hyperparameters =====
 LATENT_DIM = 16
@@ -61,3 +62,4 @@ DEVICE = 'cuda'
 
 # ===== Generation Mode =====
 GENERATION_ONLY_MODE = False
+
