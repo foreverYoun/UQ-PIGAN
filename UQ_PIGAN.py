@@ -14,11 +14,11 @@ import pandas as pd
 from torch.utils.data import Dataset, DataLoader
 
 from config import *
-from seed_utils import set_seed
+import random
 from data_preprocessing import DataPreprocessor, load_data
 from physics_model import hybrid_physics_model
 
-set_seed(RANDOM_SEED)
+random.seed(2025)
 
 
 def calculate_physics_uncertainty(train_features, train_labels, preprocessor):
@@ -344,3 +344,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
